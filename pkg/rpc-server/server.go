@@ -7,7 +7,8 @@ import (
 	"io/ioutil"
 	"log"
 	"net"
-	"pdfcompose/pkg/composer"
+
+	"github.com/blankstatic/pdfcompose/pkg/composer"
 
 	pdfcompose "github.com/blankstatic/pdfcompose/pkg/service-pdf-compose/pdfcomposeservice"
 
