@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package="service-pdf-compose/pdfcomposeservice";
+package pdfcompose;
+
+service PDFComposeService {
+  rpc SendFile (stream FileRequest) returns (FileResponse) {}
+}
+
+message FileRequest {
+  string file_name = 1;
+  bytes file_content = 2;
+}
+
+message FileResponse {
+  bytes pdf_file = 1;
+}
